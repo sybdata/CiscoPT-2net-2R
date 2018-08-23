@@ -1,0 +1,10 @@
+en
+conf t
+int gi 0/0/0
+ip address 192.168.1.249 255.255.255.0
+int gi0/0/1
+ip address 10.0.0.2 255.255.255.252
+exit
+ip route 192.168.0.0 255.255.255.0 10.0.0.1
+do wr
+exit 
